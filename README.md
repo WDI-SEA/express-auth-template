@@ -72,7 +72,7 @@ Add your own scripts to test your custom API.
 Request:
 
 ```sh
-curl --include --request POST http://localhost:4741/sign-up \
+curl --include --request POST http://localhost:8000/sign-up \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
@@ -106,7 +106,7 @@ Content-Type: application/json; charset=utf-8
 Request:
 
 ```sh
-curl --include --request POST http://localhost:4741/sign-in \
+curl --include --request POST http://localhost:8000/sign-in \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
@@ -140,7 +140,7 @@ Content-Type: application/json; charset=utf-8
 Request:
 
 ```sh
-curl --include --request PATCH http://localhost:4741/change-password/ \
+curl --include --request PATCH http://localhost:8000/change-password/ \
   --header "Authorization: Bearer $TOKEN" \
   --header "Content-Type: application/json" \
   --data '{
@@ -166,7 +166,7 @@ HTTP/1.1 204 No Content
 Request:
 
 ```sh
-curl --include --request DELETE http://localhost:4741/sign-out/ \
+curl --include --request DELETE http://localhost:8000/sign-out/ \
   --header "Authorization: Bearer $TOKEN"
 ```
 
